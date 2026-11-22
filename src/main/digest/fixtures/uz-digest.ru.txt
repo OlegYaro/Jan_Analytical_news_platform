@@ -1,0 +1,24 @@
+RegWatch — дайджест 18.11.2026
+
+🇺🇿 Узбекистан — 2 существенных, 1 для сведения, 1 не удалось проверить
+Корпоративное управление в банках
+Пост. Правления ЦБ № 24/2 от 17.09.2026, рег. МЮ № 3254-2 от 09.10.2026
+Вступает 13.01.2027, переходного периода нет
+Изменяет Положение рег. № 3254. Изменений: 10 — 🔴 3 · 🟠 4 · ⚪ 1
+🔴 п. 16 — Audit committee: a majority of members must not be related persons of the bank (board membership aside), and the chair must be an independent board member and not the board chair.
+🔴 п. 19 — Risk committee is mandatory for systemically important banks (optional for others). If set up, a majority of members must not be related persons and the chair must be an independent board member other than the board chair.
+🔴 п. 8 — Adds principles: capacity for objective and independent decisions, and a sufficient number of independent board members to ensure objective oversight.
+Читать: изменения https://lex.uz/docs/8530799 · действующая редакция https://www.lex.uz/docs/-4888804 · новая редакция https://www.lex.uz/docs/-4888804?ONDATE=13.01.2027
+Платёжный коммутатор
+Пост. Правления ЦБ № 22/4 от 25.09.2026, рег. МЮ № 3960 от 23.10.2026
+Вступает 25.01.2027, переходного периода нет
+Новый акт.
+🔴 п. 2 прил. — Authorization requests and payment messages for national-currency retail payments must be routed through the Central Bank's payment switch. International and local payment system operators (including e-money operators) work directly through it. This covers cards issued by resident banks, e-money, and mobile P2P transfers. (внедрить сложно)
+Читать: изменения https://lex.uz/docs/8554315 · действующая редакция https://lex.uz/docs/8554315 · новая редакция https://lex.uz/docs/8554315?ONDATE=25.01.2027
+
+Для сведения
+· minor — Hisoblar — ЦБ, 01.10.2026 — https://lex.uz/docs/1
+
+⚠ Не удалось проверить
+· PDF-акт 3976 — текста акта нет — https://lex.uz/pdfs/3976
+Проверено 9 из 9 стран · Не является юридической консультацией · официального русского текста нет — перевод неофициальный · Подробно в приложении

@@ -1,0 +1,150 @@
+{
+  "format": 1,
+  "id": "UZ-3254-2",
+  "country": "UZ",
+  "source_md": "UZ-3254-2.md",
+  "note": "Машиночитаемая форма таблиц docs/golden/UZ-3254-2.md (источник правды — .md). Значения — только из .md; кандидат — из сохранённой выдачи lex.uz (fixtures lexuz-search-*-actnum-24-2.html). Мягкие сравнения описаны в поле match каждого поля.",
+  "candidate": {
+    "id": "lexuz-8530799",
+    "key": "reg:3254-2",
+    "title_original": "Tijorat banklarida korporativ boshqaruv toʻgʻrisidagi nizomga oʻzgartirish va qoʻshimchalar kiritish haqida",
+    "issuer": "Правления Центрального банка Республики Узбекистан",
+    "date": "2026-10-09",
+    "doc_type": "Постановление",
+    "url": "https://lex.uz/docs/8530799",
+    "snippet": "RU: О внесении изменений и дополнений в Положение о корпоративном управлении в коммерческих банках | Постановление Правления Центрального банка Республики Узбекистан, зарегистрировано 09.10.2026 г., рег. номер 3254-2 | Oʻzbekiston Respublikasi Markaziy banki boshqaruvining qarori, 09.10.2026 yilda ro‘yxatdan o‘tgan, ro‘yxat raqami 3254-2 | RU: https://lex.uz/ru/docs/8538001",
+    "channel": "B",
+    "channel_note": "Канал Б (поиск lex.uz), а не А: для канала А код сам ставит relevant, и проверка триажа ничего бы не проверяла. Снимки — как у канала А (базовый акт и его редакция на дату вступления)."
+  },
+  "triage": { "decision": "relevant" },
+  "card_fields": {
+    "act.type": {
+      "golden": "Постановление Правления Центрального банка (Central Bank Board resolution)",
+      "match": "keywords",
+      "groups": [
+        ["central bank", "центральн", "markaziy bank", "марказий банк"],
+        ["board", "правлени", "boshqaruv", "бошқарув"],
+        ["resolution", "decision", "постановлени", "qaror", "қарор"]
+      ]
+    },
+    "act.issuer": {
+      "golden": "Центральный банк Республики Узбекистан",
+      "match": "keywords",
+      "groups": [
+        ["central bank", "центральн", "markaziy bank", "марказий банк"],
+        ["uzbekistan", "узбекистан", "o'zbekiston", "ўзбекистон"]
+      ]
+    },
+    "act.number": { "golden": "24/2", "match": "number", "value": "24/2" },
+    "act.adoption_date": { "golden": "2026-09-17", "match": "date", "value": "2026-09-17" },
+    "act.registration_number": { "golden": "3254-2", "match": "number", "value": "3254-2" },
+    "act.registration_date": { "golden": "2026-10-09", "match": "date", "value": "2026-10-09" },
+    "act.publication_date": { "golden": "2026-10-12", "match": "date", "value": "2026-10-12" },
+    "act.effective_date": { "golden": "2027-01-13", "match": "date", "value": "2027-01-13" },
+    "act.transition_period.exists": {
+      "golden": "no (вступает через 3 месяца после официального опубликования)",
+      "match": "enum",
+      "value": "no"
+    },
+    "act.original_language": { "golden": "uz", "match": "one_of", "values": ["uz", "uz-latn", "uz-cyrl", "uzbek"] },
+    "act.official_russian_text": {
+      "golden": "no (русская версия Положения на lex.uz не обновлена)",
+      "match": "enum",
+      "value": "no"
+    },
+    "amends.base_act_number": {
+      "golden": "3254 (Положение о корпоративном управлении в коммерческих банках, утв. пост. № 12/8 от 25.05.2020, рег. 30.06.2020)",
+      "match": "number",
+      "value": "3254"
+    },
+    "amends.prior_amendments": {
+      "golden": "содержит 3254-1 (пост. 19/8 от 08.07.2026, редакция Положения от 20.07.2026)",
+      "match": "contains_number",
+      "value": "3254-1"
+    },
+    "scope.applies_to": {
+      "golden": "коммерческие банки, включая микрофинансовые банки и банки с исламским банкингом",
+      "match": "keywords",
+      "note": "Мягко: в значении должно встретиться каждое из трёх понятий — любым синонимом на en/ru/uz (по началу слова, без учёта регистра и вида апострофа).",
+      "groups": [
+        ["commercial bank", "коммерческ", "tijorat bank", "тижорат банк"],
+        ["microfinance", "micro-finance", "микрофинанс", "mikromoliya", "микромолия"],
+        ["islamic", "islam", "исламск", "islomiy", "исломий"]
+      ]
+    },
+    "change_count.annex_items": { "golden": "10", "match": "count", "value": 10 },
+    "change_count.legal_base_marks": {
+      "golden": "14 (в пунктах 3 и 53 по три отметки)",
+      "match": "count",
+      "value": 14,
+      "if_unknown": { "field": "change_count.explanation", "contains_number": "14" },
+      "note": "Число отметок нигде не написано (его получают подсчётом), поэтому процитировать его нельзя: допускается value = unknown, но тогда подсчёт 14 должен быть в change_count.explanation (ANA-05)."
+    },
+    "links.amending_act": { "golden": "https://lex.uz/docs/8530799", "match": "url", "value": "https://lex.uz/docs/8530799" },
+    "links.current_version": { "golden": "https://www.lex.uz/docs/-4888804", "match": "url", "value": "https://www.lex.uz/docs/-4888804" },
+    "links.version_on_effective_date": {
+      "golden": "lex.uz/docs/-4888804?ONDATE=13.01.2027",
+      "match": "url",
+      "value": "https://lex.uz/docs/-4888804?ONDATE=13.01.2027"
+    }
+  },
+  "stage": {
+    "golden": "published (на дату прогона до 13.01.2027)",
+    "allowed": ["published", "in_force"],
+    "by_date": { "switch_date": "2027-01-13", "before": "published", "on_or_after": "in_force" },
+    "note": "Эталон зависит от даты прогона: до 13.01.2027 — только published, с 13.01.2027 — только in_force (FINDINGS, замечание №6)."
+  },
+  "change_locations": {
+    "golden": "пункты 2, 3, 5, 8, 11, 15, 16, 19, 53 и новая глава 8¹ (пункты 50¹–50⁵)",
+    "keys": ["2", "3", "5", "8", "11", "15", "16", "19", "53", "ch:8¹"],
+    "groups": { "ch:8¹": ["50¹", "50²", "50³", "50⁴", "50⁵"] },
+    "note": "Множество мест изменений: «Point 16», «п. 16», «пункт 16», «16-band» → 16; «Chapter 8¹», «глава 8¹», «8¹-bob» → глава 8¹; пункты 50¹–50⁵ относятся к главе 8¹ (карточка может дать главу одной строкой или пятью). Абзацы (абз./paragraph/xatboshi) и номера пунктов приложения (item) местом не считаются."
+  },
+  "scale": {
+    "significance": ["not_significant", "less_significant", "significant"],
+    "difficulty": ["low", "medium", "high"]
+  },
+  "changes_expect": [
+    { "n": 1, "location": "2", "golden_where": "П. 2, абз. 2", "significance": { "golden": "not_significant", "tolerance": 1 }, "difficulty": { "golden": ["low"], "tolerance": 1 } },
+    { "n": 2, "location": "3", "golden_where": "П. 3, абз. 1, 2, 6", "significance": { "golden": "less_significant", "tolerance": 1 }, "difficulty": { "golden": ["low"], "tolerance": 1 } },
+    { "n": 3, "location": "5", "golden_where": "П. 5", "significance": { "golden": "less_significant", "tolerance": 1 }, "difficulty": { "golden": ["low"], "tolerance": 1 } },
+    { "n": 4, "location": "8", "golden_where": "П. 8", "significance": { "golden": "significant", "tolerance": 0 }, "difficulty": { "golden": ["high"], "tolerance": 1 } },
+    { "n": 5, "location": "11", "golden_where": "П. 11", "significance": { "golden": "not_significant", "tolerance": 1 }, "difficulty": { "golden": ["low"], "tolerance": 1 } },
+    { "n": 6, "location": "15", "golden_where": "П. 15", "significance": { "golden": "not_significant", "tolerance": 1 }, "difficulty": { "golden": ["low"], "tolerance": 1 } },
+    { "n": 7, "location": "16", "golden_where": "П. 16", "significance": { "golden": "significant", "tolerance": 0 }, "difficulty": { "golden": ["low", "high"], "tolerance": 1 } },
+    { "n": 8, "location": "19", "golden_where": "П. 19", "significance": { "golden": "significant", "tolerance": 0 }, "difficulty": { "golden": ["medium"], "tolerance": 1 } },
+    { "n": 9, "location": "ch:8¹", "golden_where": "Глава 8¹", "significance": { "golden": "less_significant", "tolerance": 1 }, "difficulty": { "golden": ["medium"], "tolerance": 1 } },
+    { "n": 10, "location": "53", "golden_where": "П. 53", "significance": { "golden": "less_significant", "tolerance": 1 }, "difficulty": { "golden": ["low", "medium"], "tolerance": 1 } }
+  ],
+  "changes_note": "Значимость: допуск ±1 ступень по шкале not_significant < less_significant < significant, кроме строк 4, 7, 8 (строго significant). Сложность: ±1 ступень по шкале low < medium < high от указанного диапазона («низкая–высокая» — весь диапазон). Если карточка дробит одно место на несколько строк, берётся наибольшая значимость и наибольшая сложность среди них.",
+  "allow_unknown": {
+    "change_count.legal_base_marks": "Отметки правовой базы видны только в связанном снимке related/2 (редакция на 13.01.2027): 14 отметок «roʻyxat raqami 3254-2 … tahririda / asosan … toʻldirilgan», но само число 14 в тексте не написано — процитировать его нельзя, а проверка кода (HAL-03) требует число в цитате.",
+    "scope.not_applies_to": "Ни акт, ни Положение не говорят прямо, на кого они не распространяются.",
+    "act.official_russian_text": "Обновлена ли русская версия Положения, по снимкам не видно: на странице акта есть только ссылка «Рус» на перевод самого акта (lex.uz/docs/8538001); в эталонном прогоне WebFetch выключен (без сети)."
+  },
+  "snapshots": {
+    "main": {
+      "url": "https://lex.uz/docs/8530799",
+      "file": "UZ-3254-2/snapshot.html",
+      "fixture": "src/main/collect/fixtures/lexuz-doc-8530799.html",
+      "sha256": "c216c6a286f3b0bfd7bd067dff32fbe9868d60631bdb5647e99d23f6dad9012d"
+    },
+    "related": [
+      {
+        "label": "Базовый акт (действующая редакция)",
+        "url": "https://www.lex.uz/docs/-4888804",
+        "file": "UZ-3254-2/related/1.html",
+        "fixture": "src/main/collect/fixtures/lexuz-edition-m4888804.html",
+        "sha256": "650316225805fe55ceb039b049da020e6d616dee6cdfec7deb8d188a49fcc437"
+      },
+      {
+        "label": "Редакция на 2027-01-13 (дата вступления изменений)",
+        "url": "https://www.lex.uz/docs/-4888804?ONDATE=13.01.2027",
+        "file": "UZ-3254-2/related/2.html",
+        "fixture": "src/main/collect/fixtures/lexuz-edition-m4888804-ondate-20270113.html",
+        "sha256": "a8abdb322e2827a2dead5b7cbb15a7f56f9eeafdb772542bcf80a59cd617a1b3"
+      }
+    ],
+    "taken": "2026-11-17/18, живой lex.uz (FINDINGS «Фаза 4»)"
+  }
+}

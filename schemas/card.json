@@ -1,0 +1,460 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Card",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "candidate_id": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "act": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "$ref": "#/definitions/FactString"
+        },
+        "issuer": {
+          "$ref": "#/definitions/FactString"
+        },
+        "number": {
+          "$ref": "#/definitions/FactString"
+        },
+        "title_original": {
+          "$ref": "#/definitions/FactString"
+        },
+        "title_en": {
+          "type": "string"
+        },
+        "adoption_date": {
+          "$ref": "#/definitions/FactDate"
+        },
+        "registration_number": {
+          "$ref": "#/definitions/FactString"
+        },
+        "registration_date": {
+          "$ref": "#/definitions/FactDate"
+        },
+        "publication_date": {
+          "$ref": "#/definitions/FactDate"
+        },
+        "effective_date": {
+          "$ref": "#/definitions/FactDate"
+        },
+        "transition_period": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "exists": {
+              "$ref": "#/definitions/FactYesNo"
+            },
+            "details": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "exists",
+            "details"
+          ]
+        },
+        "original_language": {
+          "type": "string"
+        },
+        "official_russian_text": {
+          "enum": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        }
+      },
+      "required": [
+        "type",
+        "issuer",
+        "number",
+        "title_original",
+        "title_en",
+        "adoption_date",
+        "registration_number",
+        "registration_date",
+        "publication_date",
+        "effective_date",
+        "transition_period",
+        "original_language",
+        "official_russian_text"
+      ]
+    },
+    "stage": {
+      "enum": [
+        "draft",
+        "adopted",
+        "registered",
+        "published",
+        "in_force"
+      ]
+    },
+    "update_of": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "ledger_key": {
+              "type": "string"
+            },
+            "what_changed": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "ledger_key",
+            "what_changed"
+          ]
+        }
+      ]
+    },
+    "amends": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "base_act_title": {
+          "$ref": "#/definitions/FactString"
+        },
+        "base_act_number": {
+          "$ref": "#/definitions/FactString"
+        },
+        "base_act_url": {
+          "type": "string"
+        },
+        "prior_amendments": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "number": {
+                "type": "string"
+              },
+              "date": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+                  },
+                  {
+                    "const": "unknown"
+                  }
+                ]
+              },
+              "url": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "number",
+              "date",
+              "url"
+            ]
+          }
+        }
+      },
+      "required": [
+        "base_act_title",
+        "base_act_number",
+        "base_act_url",
+        "prior_amendments"
+      ]
+    },
+    "scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "applies_to": {
+          "$ref": "#/definitions/FactString"
+        },
+        "not_applies_to": {
+          "$ref": "#/definitions/FactString"
+        }
+      },
+      "required": [
+        "applies_to",
+        "not_applies_to"
+      ]
+    },
+    "change_count": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "annex_items": {
+          "$ref": "#/definitions/FactInt"
+        },
+        "legal_base_marks": {
+          "$ref": "#/definitions/FactInt"
+        },
+        "explanation": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "annex_items",
+        "legal_base_marks",
+        "explanation"
+      ]
+    },
+    "changes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "n": {
+            "type": "integer"
+          },
+          "location": {
+            "type": "string"
+          },
+          "kind": {
+            "enum": [
+              "rewritten",
+              "added",
+              "repealed",
+              "new_chapter"
+            ]
+          },
+          "summary_en": {
+            "type": "string"
+          },
+          "significance": {
+            "enum": [
+              "significant",
+              "less_significant",
+              "not_significant"
+            ]
+          },
+          "significance_reason": {
+            "type": "string"
+          },
+          "implementation_difficulty": {
+            "enum": [
+              "low",
+              "medium",
+              "high"
+            ]
+          },
+          "difficulty_reason": {
+            "type": "string"
+          },
+          "quote": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "n",
+          "location",
+          "kind",
+          "summary_en",
+          "significance",
+          "significance_reason",
+          "implementation_difficulty",
+          "difficulty_reason",
+          "quote",
+          "url"
+        ]
+      }
+    },
+    "links": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "amending_act": {
+          "type": "string"
+        },
+        "current_version": {
+          "type": "string"
+        },
+        "version_on_effective_date": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "amending_act",
+        "current_version",
+        "version_on_effective_date"
+      ]
+    },
+    "unknowns": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "notes": {
+      "type": "string"
+    },
+    "headline": {
+      "type": "string",
+      "maxLength": 80
+    },
+    "top_changes": {
+      "type": "array",
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "n": {
+            "type": "integer"
+          },
+          "location": {
+            "type": "string"
+          },
+          "summary_en": {
+            "type": "string",
+            "maxLength": 300
+          },
+          "implementation_difficulty": {
+            "enum": [
+              "low",
+              "medium",
+              "high"
+            ]
+          }
+        },
+        "required": [
+          "n",
+          "location",
+          "summary_en",
+          "implementation_difficulty"
+        ]
+      }
+    }
+  },
+  "required": [
+    "candidate_id",
+    "country",
+    "act",
+    "stage",
+    "update_of",
+    "amends",
+    "scope",
+    "change_count",
+    "changes",
+    "links",
+    "unknowns",
+    "notes"
+  ],
+  "definitions": {
+    "FactString": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "type": "string"
+        },
+        "quote": {
+          "type": "string",
+          "maxLength": 300
+        },
+        "url": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value",
+        "quote",
+        "url"
+      ]
+    },
+    "FactDate": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+            },
+            {
+              "const": "unknown"
+            }
+          ]
+        },
+        "quote": {
+          "type": "string",
+          "maxLength": 300
+        },
+        "url": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value",
+        "quote",
+        "url"
+      ]
+    },
+    "FactInt": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "const": "unknown"
+            }
+          ]
+        },
+        "quote": {
+          "type": "string",
+          "maxLength": 300
+        },
+        "url": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value",
+        "quote",
+        "url"
+      ]
+    },
+    "FactYesNo": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "enum": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        "quote": {
+          "type": "string",
+          "maxLength": 300
+        },
+        "url": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value",
+        "quote",
+        "url"
+      ]
+    }
+  }
+}

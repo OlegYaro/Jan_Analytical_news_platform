@@ -1,0 +1,20 @@
+appId: app.regwatch
+productName: RegWatch
+directories:
+  output: dist
+files:
+  - out/**
+  - package.json
+extraResources:
+  - from: skills
+    to: skills
+  - from: schemas
+    to: schemas
+  - from: docs/golden
+    to: golden
+mac:
+  target:
+    - dir
+  # Без сертификата: подпись не ставит electron-builder, её делает scripts/app.mjs
+  # командой `codesign --force --deep -s -` (ad-hoc).
+  identity: null

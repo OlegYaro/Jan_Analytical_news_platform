@@ -1,0 +1,178 @@
+{
+  "candidate_id": "lexuz-8554315",
+  "country": "UZ",
+  "act": {
+    "type": {
+      "value": "Resolution of the Board of the Central Bank (qaror)",
+      "quote": "Oʻzbekiston Respublikasi Markaziy banki boshqaruvining",
+      "url": "https://lex.uz/docs/8554315"
+    },
+    "issuer": {
+      "value": "Board of the Central Bank of the Republic of Uzbekistan",
+      "quote": "Oʻzbekiston Respublikasi Markaziy banki boshqaruvining",
+      "url": "https://lex.uz/docs/8554315"
+    },
+    "number": {
+      "value": "22/4",
+      "quote": "22/4-son",
+      "url": "https://lex.uz/docs/8554315"
+    },
+    "title_original": {
+      "value": "Toʻlov svitchi orqali chakana toʻlovlarni oʻtkazish tartibi toʻgʻrisidagi nizomni tasdiqlash haqida",
+      "quote": "Toʻlov svitchi orqali chakana toʻlovlarni oʻtkazish tartibi toʻgʻrisidagi nizomni tasdiqlash haqida",
+      "url": "https://lex.uz/docs/8554315"
+    },
+    "title_en": "On approval of the Regulation on the procedure for retail payments through the payment switch",
+    "adoption_date": {
+      "value": "2026-09-25",
+      "quote": "2026-yil 25-sentabr,",
+      "url": "https://lex.uz/docs/8554315"
+    },
+    "registration_number": {
+      "value": "3960",
+      "quote": "roʻyxat raqami 3960]",
+      "url": "https://lex.uz/docs/8554315"
+    },
+    "registration_date": {
+      "value": "2026-10-23",
+      "quote": "tomonidan 2026-yil 23-oktabrda roʻyxatdan oʻtkazildi",
+      "url": "https://lex.uz/docs/8554315"
+    },
+    "publication_date": {
+      "value": "2026-10-24",
+      "quote": "(Qonunchilik maʼlumotlari milliy bazasi, 24.10.2026 y., 10/26/3960/1072-son)",
+      "url": "https://lex.uz/docs/8554315"
+    },
+    "effective_date": {
+      "value": "2027-01-25",
+      "quote": "25.01.2027",
+      "url": "https://lex.uz/docs/8554315"
+    },
+    "transition_period": {
+      "exists": {
+        "value": "no",
+        "quote": "Mazkur qaror rasmiy eʼlon qilingan kundan eʼtiboran uch oydan keyin kuchga kiradi.",
+        "url": "https://lex.uz/docs/8554315"
+      },
+      "details": "Only the ordinary gap of three months after official publication; no explicit transition period or staged deadlines."
+    },
+    "original_language": "uz",
+    "official_russian_text": "unknown"
+  },
+  "stage": "registered",
+  "update_of": null,
+  "amends": {
+    "base_act_title": {
+      "value": "unknown",
+      "quote": "",
+      "url": "https://lex.uz/docs/8554315"
+    },
+    "base_act_number": {
+      "value": "unknown",
+      "quote": "",
+      "url": "https://lex.uz/docs/8554315"
+    },
+    "base_act_url": "",
+    "prior_amendments": []
+  },
+  "scope": {
+    "applies_to": {
+      "value": "Interbank payments and clearing in national currency by bank cards and e-money in Uzbekistan via the payment switch; banks (participants), payment organisations and payment system operators (connected entities), and the Information Centre LLC (ABM).",
+      "quote": "Ushbu Nizom toʻlovlarning xavfsizligi va barqarorligini taʼminlash maqsadida Oʻzbekiston Respublikasi hududida bank kartalari va elektron pullar orqali milliy valyutada amalga oshiriladigan banklararo toʻlovlar",
+      "url": "https://lex.uz/docs/8554315"
+    },
+    "not_applies_to": {
+      "value": "unknown",
+      "quote": "",
+      "url": "https://lex.uz/docs/8554315"
+    }
+  },
+  "change_count": {
+    "annex_items": {
+      "value": 39,
+      "quote": "39. Mazkur Nizom talablarining buzilishida aybdor boʻlgan shaxslar qonunchilik hujjatlarida belgilangan tartibda javobgar boʻladilar.",
+      "url": "https://lex.uz/docs/8554315"
+    },
+    "legal_base_marks": {
+      "value": "unknown",
+      "quote": "",
+      "url": "https://lex.uz/docs/8554315"
+    },
+    "explanation": "This is a new regulation, not an amendment. The annex Regulation has 39 numbered points in 9 chapters. The last point is numbered 39. The snapshot shows no change marks, so that count is unknown. The changes below group the points by topic."
+  },
+  "changes": [
+    {
+      "n": 1,
+      "location": "Annex, points 2 and 21",
+      "kind": "new_chapter",
+      "summary_en": "Authorization requests and payment messages for national-currency retail payments must be routed through the Central Bank's payment switch. International and local payment system operators (including e-money operators) work directly through it. This covers cards issued by resident banks, e-money, and mobile P2P transfers.",
+      "significance": "significant",
+      "significance_reason": "Mandatory central routing changes the payment-processing business model, interchange and fee economics, and counterparty dependence of banks and payment subsidiaries.",
+      "implementation_difficulty": "high",
+      "difficulty_reason": "Banks and payment system operators must integrate technically, change their processing flows and contracts, and migrate existing routing.",
+      "quote": "Bunda xalqaro va mahalliy toʻlov tizimlari operatorlari (elektron pullar tizimi operatorlari) mazkur toʻlovlar boʻyicha bevosita Oʻzbekiston Respublikasi Markaziy bankining yagona shlyuzi — toʻlov svitchi orqali ishlaydi.",
+      "url": "https://lex.uz/docs/8554315"
+    },
+    {
+      "n": 2,
+      "location": "Annex, points 5-6 and 11",
+      "kind": "new_chapter",
+      "summary_en": "Only banks can be switch participants. Payment organisations and operators connect as connected entities and settle through a settlement bank. The connection procedure runs through the Central Bank, takes up to 30 working days, and is formalised by participation, settlement-bank and service contracts.",
+      "significance": "less_significant",
+      "significance_reason": "It sets access and licensing conditions and creates a role for banks as settlement banks, which brings new business and counterparty risk. It does not affect control or capital directly.",
+      "implementation_difficulty": "medium",
+      "difficulty_reason": "Applications, test runs and new contracts are needed.",
+      "quote": "Toʻlov svitchining ishtirokchisi sifatida faqat bank ishtirok etishi mumkin.",
+      "url": "https://lex.uz/docs/8554315"
+    },
+    {
+      "n": 3,
+      "location": "Annex, points 16, 18 and 28",
+      "kind": "added",
+      "summary_en": "Participants must ensure sufficient settlement liquidity and run AML/CFT and compliance controls. Settlement banks assess and manage the liquidity and settlement risk of connected entities, for example by setting limits and requiring pre-funding. Their guarantee for connected entities is set by contract. The switch applies limits and pre-funding.",
+      "significance": "less_significant",
+      "significance_reason": "It adds liquidity and counterparty exposure and compliance duties for banks acting as settlement banks, with moderate cost.",
+      "implementation_difficulty": "medium",
+      "difficulty_reason": "Banks need limit-setting, monitoring and liquidity management for the switch.",
+      "quote": "hisob-kitob uchun yetarli likvidlikni taʼminlash;",
+      "url": "https://lex.uz/docs/8554315"
+    },
+    {
+      "n": 4,
+      "location": "Annex, points 15, 33-34",
+      "kind": "added",
+      "summary_en": "Participants and connected entities must notify changes in connection details, settlement bank, responsible persons and licence or risk data. They must give ABM monthly data on operations, liquidity and technical failures by the 10th day of the following month. Incidents must be reported to the Central Bank immediately.",
+      "significance": "less_significant",
+      "significance_reason": "These are new reporting and notification duties with moderate compliance cost.",
+      "implementation_difficulty": "low",
+      "difficulty_reason": "They are routine reports and notifications.",
+      "quote": "Favqulodda hodisalar toʻgʻrisida ishtirokchilar va ulangan subyektlar Oʻzbekiston Respublikasi Markaziy bankini darhol xabardor qiladi.",
+      "url": "https://lex.uz/docs/8554315"
+    },
+    {
+      "n": 5,
+      "location": "Annex, points 29-32 and 36-38",
+      "kind": "added",
+      "summary_en": "ABM must meet information security, cybersecurity and business-continuity requirements, including a backup centre and stress tests. In an emergency it may, in agreement with the Central Bank, temporarily restrict operations or suspend connections. Internal documents may not add restrictions beyond the law or this Regulation.",
+      "significance": "not_significant",
+      "significance_reason": "These are mainly operator-side obligations on the Central Bank infrastructure. For banks they mean continuity risk and a possible temporary suspension of connection.",
+      "implementation_difficulty": "low",
+      "difficulty_reason": "The duties fall mainly on ABM, not on banks.",
+      "quote": "Bunda ichki hujjatlarda qonunchilik hujjatlari yoki mazkur Nizomda nazarda tutilmagan cheklovlar va qoʻshimcha majburiyatlarni joriy etishga yoʻl qoʻyilmaydi.",
+      "url": "https://lex.uz/docs/8554315"
+    }
+  ],
+  "links": {
+    "amending_act": "https://lex.uz/docs/8554315",
+    "current_version": "https://lex.uz/docs/8554315",
+    "version_on_effective_date": "https://lex.uz/docs/8554315?ONDATE=25.01.2027"
+  },
+  "unknowns": [
+    "amends.base_act_title",
+    "amends.base_act_number",
+    "scope.not_applies_to",
+    "change_count.legal_base_marks",
+    "act.official_russian_text"
+  ],
+  "notes": "Reviewer fixes: act.number now quotes the single snapshot line \"22/4-son\". change_count.annex_items quotes the last point (39). The effective date, 25.01.2027, is the date lex.uz shows. The text says \"three months after official publication\". The publication date is taken from the national database line dated 24.10.2026. The resolution was adopted on 2026-09-25 and registered with the Ministry of Justice on 2026-10-23. This is a new regulation, so it has no base act. Perspective note: the regulation matters mainly for banks' payment-processing business and their settlement-bank role. It has no direct effect on ownership, capital or dividends."
+}

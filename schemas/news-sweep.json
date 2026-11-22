@@ -1,0 +1,59 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "NewsSweep",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "country": {
+      "type": "string"
+    },
+    "leads": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "headline": {
+            "type": "string"
+          },
+          "outlet": {
+            "type": "string"
+          },
+          "date": {
+            "type": "string",
+            "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+          },
+          "url": {
+            "type": "string"
+          },
+          "act_number": {
+            "type": "string"
+          },
+          "act_date": {
+            "type": "string"
+          },
+          "issuer": {
+            "type": "string"
+          },
+          "summary": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "headline",
+          "outlet",
+          "date",
+          "url",
+          "act_number",
+          "act_date",
+          "issuer",
+          "summary"
+        ]
+      }
+    }
+  },
+  "required": [
+    "country",
+    "leads"
+  ]
+}

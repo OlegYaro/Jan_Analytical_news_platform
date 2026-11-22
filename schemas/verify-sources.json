@@ -1,0 +1,229 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "SourcesCheck",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "country": {
+      "type": "string"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "reachable": {
+            "type": "boolean"
+          },
+          "login_or_captcha": {
+            "type": "boolean"
+          },
+          "final_url": {
+            "type": "string"
+          },
+          "official": {
+            "type": "boolean"
+          },
+          "official_reason": {
+            "type": "string"
+          },
+          "type_matches": {
+            "type": "boolean"
+          },
+          "has_dated_listing": {
+            "type": "boolean"
+          },
+          "needs_js": {
+            "enum": [
+              "yes",
+              "no",
+              "unknown"
+            ]
+          },
+          "language": {
+            "type": "string"
+          },
+          "profile": {
+            "anyOf": [
+              {
+                "type": "null"
+              },
+              {
+                "$ref": "#/definitions/Profile"
+              }
+            ]
+          },
+          "seen_latest": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "title": {
+                  "type": "string"
+                },
+                "date": {
+                  "type": "string"
+                },
+                "url": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "title",
+                "date",
+                "url"
+              ]
+            },
+            "maxItems": 5
+          },
+          "verdict": {
+            "enum": [
+              "ok",
+              "warn",
+              "fail"
+            ]
+          },
+          "reasons": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "id",
+          "reachable",
+          "login_or_captcha",
+          "final_url",
+          "official",
+          "official_reason",
+          "type_matches",
+          "has_dated_listing",
+          "needs_js",
+          "language",
+          "profile",
+          "seen_latest",
+          "verdict",
+          "reasons"
+        ]
+      }
+    },
+    "watched_acts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "registration_number": {
+            "type": "string"
+          },
+          "verdict": {
+            "enum": [
+              "ok",
+              "warn",
+              "fail"
+            ]
+          },
+          "reason": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "registration_number",
+          "verdict",
+          "reason"
+        ]
+      }
+    }
+  },
+  "required": [
+    "country",
+    "sources",
+    "watched_acts"
+  ],
+  "definitions": {
+    "Profile": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "enum": [
+            "rss",
+            "html_list",
+            "json_api"
+          ]
+        },
+        "url": {
+          "type": "string"
+        },
+        "item": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "link": {
+          "type": "string"
+        },
+        "date": {
+          "type": "string"
+        },
+        "date_format": {
+          "type": "string"
+        },
+        "issuer": {
+          "type": "string"
+        },
+        "pagination": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "param": {
+              "type": "string"
+            },
+            "max_pages": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "param",
+            "max_pages"
+          ]
+        },
+        "json_paths": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "items": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string"
+            },
+            "link": {
+              "type": "string"
+            },
+            "date": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "items",
+            "title",
+            "link",
+            "date"
+          ]
+        }
+      },
+      "required": [
+        "kind",
+        "url"
+      ]
+    }
+  }
+}

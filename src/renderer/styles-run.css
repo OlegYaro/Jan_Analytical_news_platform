@@ -1,0 +1,15 @@
+.run-meta { margin: 0 0 6px; color: var(--muted); }
+.run-pause { margin: 0 0 6px; font-weight: 600; color: var(--warn-text); background: var(--warn-bg); border: 1px solid var(--warn-border); border-radius: 8px; padding: 6px 10px; }
+.run-now { margin: 0 0 10px; font-weight: 600; }
+.run-scroll { overflow-x: auto; }
+.run-table { width: 100%; border-collapse: collapse; }
+.run-table th { text-align: left; font-weight: 600; font-size: 12px; color: var(--muted); padding: 4px 8px; }
+.run-table td { padding: 7px 8px; border-top: 1px solid var(--border); vertical-align: top; }
+.run-table .run-stage { text-align: center; width: 70px; }
+.run-result.bad { color: var(--bad); }
+.run-result.changes { font-weight: 600; }
+.run-sub { font-size: 14px; margin: 14px 0 4px; }
+.run-usage { margin: 0; padding-left: 18px; }
+.run-actions-msg { margin: 4px 0; }
+.run-period { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin: 8px 0; }
+.run-period input { font: inherit; padding: 5px 8px; border-radius: 6px; border: 1px solid var(--border); background: var(--bg); color: var(--text); }

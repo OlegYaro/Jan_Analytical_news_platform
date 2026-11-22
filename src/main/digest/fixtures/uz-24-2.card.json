@@ -1,0 +1,218 @@
+{
+  "candidate_id": "lexuz-8530799",
+  "country": "UZ",
+  "act": {
+    "type": {
+      "value": "Resolution of the Board of the Central Bank (qaror)",
+      "quote": "Oʻzbekiston Respublikasi Markaziy banki boshqaruvining qarori, 09.10.2026 yilda ro‘yxatdan o‘tgan, ro‘yxat raqami 3254-2",
+      "url": "https://lex.uz/docs/8530799"
+    },
+    "issuer": {
+      "value": "Central Bank of the Republic of Uzbekistan (Board)",
+      "quote": "Oʻzbekiston Respublikasi Markaziy banki boshqaruvining qarori, 09.10.2026 yilda ro‘yxatdan o‘tgan, ro‘yxat raqami 3254-2",
+      "url": "https://lex.uz/docs/8530799"
+    },
+    "number": {
+      "value": "24/2",
+      "quote": "2026 yil 17 sentabr,\n24/2-son",
+      "url": "https://lex.uz/docs/8530799"
+    },
+    "title_original": {
+      "value": "Tijorat banklarida korporativ boshqaruv toʻgʻrisidagi nizomga oʻzgartirish va qoʻshimchalar kiritish haqida",
+      "quote": "Tijorat banklarida korporativ boshqaruv toʻgʻrisidagi nizomga oʻzgartirish va qoʻshimchalar kiritish haqida",
+      "url": "https://lex.uz/docs/8530799"
+    },
+    "title_en": "On amendments and additions to the Regulation on Corporate Governance in Commercial Banks",
+    "adoption_date": {
+      "value": "2026-09-17",
+      "quote": "2026 yil 17 sentabr,",
+      "url": "https://lex.uz/docs/8530799"
+    },
+    "registration_number": {
+      "value": "3254-2",
+      "quote": "roʻyxat raqami 3254-2",
+      "url": "https://lex.uz/docs/8530799"
+    },
+    "registration_date": {
+      "value": "2026-10-09",
+      "quote": "Oʻzbekiston Respublikasi Adliya vazirligi tomonidan 2026 yil 9 oktabrda roʻyxatdan oʻtkazildi",
+      "url": "https://lex.uz/docs/8530799"
+    },
+    "publication_date": {
+      "value": "2026-10-12",
+      "quote": "(Qonunchilik maʼlumotlari milliy bazasi, 12.10.2026 y., 10/26/3254-2/1020-son)",
+      "url": "https://lex.uz/docs/8530799"
+    },
+    "effective_date": {
+      "value": "2027-01-13",
+      "quote": "Кучга кириш санаси\n13.01.2027",
+      "url": "https://lex.uz/docs/8530799"
+    },
+    "transition_period": {
+      "exists": {
+        "value": "no",
+        "quote": "Mazkur qaror rasmiy eʼlon qilingan kundan eʼtiboran uch oydan keyin kuchga kiradi.",
+        "url": "https://lex.uz/docs/8530799"
+      },
+      "details": "Only the ordinary three-month gap after official publication; no staged deadlines or extra compliance period stated."
+    },
+    "original_language": "uz",
+    "official_russian_text": "unknown"
+  },
+  "stage": "published",
+  "update_of": null,
+  "amends": {
+    "base_act_title": {
+      "value": "Tijorat banklarida korporativ boshqaruv toʻgʻrisidagi nizom (Regulation on Corporate Governance in Commercial Banks), approved by CB Board resolution 12/8 of 25.05.2020",
+      "quote": "Tijorat banklarida korporativ boshqaruv toʻgʻrisidagi nizomni tasdiqlash haqida",
+      "url": "https://www.lex.uz/docs/-4888804"
+    },
+    "base_act_number": {
+      "value": "3254",
+      "quote": "roʻyxat raqami 3254",
+      "url": "https://www.lex.uz/docs/-4888804"
+    },
+    "base_act_url": "https://www.lex.uz/docs/-4888804",
+    "prior_amendments": [
+      {
+        "number": "3254-1 (CB Board resolution 19/8 of 08.07.2026, amending the preamble)",
+        "date": "2026-07-18",
+        "url": "https://www.lex.uz/docs/-4888804"
+      }
+    ]
+  },
+  "scope": {
+    "applies_to": {
+      "value": "Commercial banks, including microfinance banks and banks conducting Islamic banking",
+      "quote": "Mazkur Nizom tijorat banklarida, shu jumladan mikromoliya banklarida, shuningdek islomiy bank faoliyatini amalga oshiruvchi banklar va mikromoliya banklarida",
+      "url": "https://www.lex.uz/docs/-4888804"
+    },
+    "not_applies_to": {
+      "value": "unknown",
+      "quote": "",
+      "url": "https://lex.uz/docs/8530799"
+    }
+  },
+  "change_count": {
+    "annex_items": {
+      "value": 10,
+      "quote": "10. 53-bandda:",
+      "url": "https://lex.uz/docs/8530799"
+    },
+    "legal_base_marks": {
+      "value": "unknown",
+      "quote": "",
+      "url": "https://lex.uz/docs/8530799"
+    },
+    "explanation": "The annex has 10 numbered items (amending paras 2, 3, 5, 8, 11, 15, 16, 19, 53 and adding Chapter 81). Change marks in the legal database were not counted, since the edition snapshot was not compared."
+  },
+  "changes": [
+    {
+      "n": 1,
+      "location": "Annex item 7 (para 16)",
+      "kind": "rewritten",
+      "summary_en": "Audit committee: a majority of members must not be related persons of the bank (board membership aside), and the chair must be an independent board member and not the board chair.",
+      "significance": "significant",
+      "significance_reason": "Constrains board committee composition and control rights. A PE owner's nominees may count as related persons and be limited on the audit committee.",
+      "implementation_difficulty": "medium",
+      "difficulty_reason": "Committee and board composition may need restructuring and recruiting independent members.",
+      "quote": "Audit qoʻmitasining raisi kengashning mustaqil aʼzosi boʻlishi va kengash raisi boʻlmasligi lozim.",
+      "url": "https://lex.uz/docs/8530799"
+    },
+    {
+      "n": 2,
+      "location": "Annex item 8 (para 19)",
+      "kind": "rewritten",
+      "summary_en": "Risk committee is mandatory for systemically important banks (optional for others). If set up, a majority of members must not be related persons and the chair must be an independent board member other than the board chair.",
+      "significance": "significant",
+      "significance_reason": "Affects board structure and control at systemically important banks.",
+      "implementation_difficulty": "medium",
+      "difficulty_reason": "Requires a new committee or reconstitution and independent directors.",
+      "quote": "bunda mazkur qoʻmitani tashkil etish tizimli ahamiyatga molik banklar uchun majburiy hisoblanadi.",
+      "url": "https://lex.uz/docs/8530799"
+    },
+    {
+      "n": 3,
+      "location": "Annex item 4 (para 8)",
+      "kind": "added",
+      "summary_en": "Adds principles: capacity for objective and independent decisions, and a sufficient number of independent board members to ensure objective oversight.",
+      "significance": "significant",
+      "significance_reason": "Introduces an expectation of sufficient independent directors, which affects board composition and shareholder control.",
+      "implementation_difficulty": "medium",
+      "difficulty_reason": "The 'sufficient' threshold is undefined, so some interpretive and recruitment effort is needed.",
+      "quote": "bank faoliyati ustidan xolis nazoratni taʼminlash uchun kengashning yetarlicha mustaqil aʼzolari mavjudligi;",
+      "url": "https://lex.uz/docs/8530799"
+    },
+    {
+      "n": 4,
+      "location": "Annex item 9 (new Chapter 81, paras 501–505)",
+      "kind": "new_chapter",
+      "summary_en": "Banks must develop a board-approved succession and talent-pipeline plan for board, management and key staff positions. The plan is reviewed at least annually and includes contingency measures, and the board is responsible for it.",
+      "significance": "less_significant",
+      "significance_reason": "New governance duty with moderate compliance cost. It gives the board a role in succession planning, which touches governance.",
+      "implementation_difficulty": "medium",
+      "difficulty_reason": "A new plan, annual review and assessments are needed.",
+      "quote": "81-bob. Rahbar kadrlar zaxirasini shakllantirish va rivojlantirish",
+      "url": "https://lex.uz/docs/8530799"
+    },
+    {
+      "n": 5,
+      "location": "Annex item 10 (para 53)",
+      "kind": "rewritten",
+      "summary_en": "Disclosure list expanded: board member selection and appointment procedures and board composition principles; bank dividend payment policy and remuneration policy; material risks; results of board and management performance.",
+      "significance": "less_significant",
+      "significance_reason": "Added disclosure, including the dividend policy and board selection rules, which matter to investors but carry moderate cost.",
+      "implementation_difficulty": "low",
+      "difficulty_reason": "Mostly disclosure of existing policies.",
+      "quote": "bankning dividendlar toʻlash siyosati, shuningdek, kengash, boshqaruv aʼzolari hamda bankning muhim ahamiyatga ega xodimlarini mukofotlash siyosati va boshqalar;",
+      "url": "https://lex.uz/docs/8530799"
+    },
+    {
+      "n": 6,
+      "location": "Annex item 6 (para 15)",
+      "kind": "added",
+      "summary_en": "Board must ensure committees work independently and review committee composition periodically, including rotating members and chairs.",
+      "significance": "less_significant",
+      "significance_reason": "New governance duty on committee rotation.",
+      "implementation_difficulty": "low",
+      "difficulty_reason": "Internal policy and periodic review.",
+      "quote": "shu jumladan ularning aʼzolari va raislarini rotatsiya qilish masalasini koʻrib chiqishi kerak.",
+      "url": "https://lex.uz/docs/8530799"
+    },
+    {
+      "n": 7,
+      "location": "Annex items 2–3 (paras 3, 5)",
+      "kind": "rewritten",
+      "summary_en": "Clarifies the duties of board and management members (good faith, prudence, loyalty, serving the interests of the bank and its shareholders). Adds a duty to avoid actions that may harm the bank's business reputation.",
+      "significance": "less_significant",
+      "significance_reason": "Slightly expanded director duties that bear on nominee directors' conduct.",
+      "implementation_difficulty": "low",
+      "difficulty_reason": "Mainly changes to internal codes.",
+      "quote": "bankning ishchanlik obroʻsiga salbiy taʼsir koʻrsatishi mumkin boʻlgan har qanday xatti-harakatlarni sodir etmasligi;",
+      "url": "https://lex.uz/docs/8530799"
+    },
+    {
+      "n": 8,
+      "location": "Annex items 1, 5 (paras 2, 11)",
+      "kind": "rewritten",
+      "summary_en": "Clarifications: authority, duties and responsibility must be allocated clearly in internal documents. Committee design should account for each committee's specific tasks.",
+      "significance": "not_significant",
+      "significance_reason": "Clarifying wording without new concrete obligations.",
+      "implementation_difficulty": "low",
+      "difficulty_reason": "Minimal.",
+      "quote": "bankning ichki hujjatlarida belgilanadigan vakolat, vazifalar va javobgarlikning aniq tarzda taqsimlanishi;",
+      "url": "https://lex.uz/docs/8530799"
+    }
+  ],
+  "links": {
+    "amending_act": "https://lex.uz/docs/8530799",
+    "current_version": "https://www.lex.uz/docs/-4888804",
+    "version_on_effective_date": "https://www.lex.uz/docs/-4888804?ONDATE=13.01.2027"
+  },
+  "unknowns": [
+    "not_applies_to",
+    "change_count.legal_base_marks",
+    "official_russian_text"
+  ],
+  "notes": "The act is registered and published, but not yet in force (effective 2027-01-13). The 'stage' field is therefore 'published'. The act is dated 2026-09-17 (no. 24/2). Prior amendment 3254-1 (CB Board resolution 19/8 of 08.07.2026) amended the Regulation's preamble. No Russian-language page was checked. WebFetch was denied, and the pages under related_snapshots, other than the base act header, were not examined further."
+}

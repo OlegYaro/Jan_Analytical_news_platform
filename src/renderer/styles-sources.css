@@ -1,0 +1,6 @@
+.src-progress { margin: 8px 0; }
+.src-progress progress, .src-indeterminate { width: 100%; height: 10px; accent-color: var(--accent); }
+.src-result { white-space: pre-line; background: var(--bg); border: 1px solid var(--border); border-radius: 8px; padding: 8px 12px; margin: 8px 0; }
+.src-summary { margin-top: 12px; }
+.src-summary h3 { margin: 0 0 4px; }
+.cty-modal:has(.cty-source) { max-width: 640px; }

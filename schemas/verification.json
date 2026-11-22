@@ -1,0 +1,122 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Verification",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "country": {
+      "type": "string"
+    },
+    "cards": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "candidate_id": {
+            "type": "string"
+          },
+          "fields": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "field": {
+                  "type": "string"
+                },
+                "status": {
+                  "enum": [
+                    "ok",
+                    "mismatch",
+                    "unverifiable"
+                  ]
+                },
+                "correct_value": {
+                  "type": "string"
+                },
+                "quote": {
+                  "type": "string"
+                },
+                "url": {
+                  "type": "string"
+                },
+                "comment": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "field",
+                "status",
+                "comment"
+              ]
+            }
+          },
+          "verdict": {
+            "enum": [
+              "confirmed",
+              "needs_correction",
+              "unconfirmed"
+            ]
+          }
+        },
+        "required": [
+          "candidate_id",
+          "fields",
+          "verdict"
+        ]
+      }
+    },
+    "returned": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "reason": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "reason"
+        ]
+      }
+    },
+    "watched_acts_check": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "registration_number": {
+            "type": "string"
+          },
+          "new_edition_found": {
+            "type": "boolean"
+          },
+          "edition_date": {
+            "type": "string",
+            "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+          },
+          "url": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "registration_number",
+          "new_edition_found"
+        ]
+      }
+    }
+  },
+  "required": [
+    "country",
+    "cards",
+    "returned",
+    "watched_acts_check"
+  ]
+}
